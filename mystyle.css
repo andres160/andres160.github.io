@@ -1,0 +1,34 @@
+.material-icons {
+    padding: 5px;
+    vertical-align: middle;
+  }
+  
+  /* .card-body {
+    margin: 1.25rem 0;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  } */
+  
+    .card-header{
+      margin: 20;
+    }
+  
+  .mdc-card__media {
+    background-image: url(https://via.placeholder.com/100x100)
+  }
+  
+  .card-body {
+    padding: 16px;
+  }
+
+  .row {
+    padding: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  #map{
+  height: 100%;
+}

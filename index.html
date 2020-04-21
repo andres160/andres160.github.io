@@ -1,94 +1,192 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Analytics and Insights Team</title>
+
+<head>
+    <title>2018 US Flights Data</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-uhut8PejFZO8994oEgm/ZfAv0mW1/b83nczZzSwElbeILxwkN491YQXsCFTE6+nx" crossorigin="anonymous">
-    </head>
-  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-uhut8PejFZO8994oEgm/ZfAv0mW1/b83nczZzSwElbeILxwkN491YQXsCFTE6+nx"
+        crossorigin="anonymous">
 
+    <!-- Mapbox CSS & JS -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- <style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+  </style> -->
 
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
 
+</head>
 
-        <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                  <img src="https://i.ibb.co/fdjN2CN/ai-logo.png" width="40" height="40" alt="">
-                </a>
-              </nav>
+<body>
 
-
-
-    <div class="jumbotron">
-        <h1 class="display-3">Analytics and Insights Team</h1>
-        <p class="lead"><h3>Welcome to our projects site!</h3></p>
-        <hr class="my-2">
-        <p><h5>The projects below highlight what we have learned at the University of Denver's Data Anlytics Boot Camp</h5></p>
-        <!-- <p class="lead">
-            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-        </p> -->
-    </div>
-
-
-
-
-
-    <div class="container">
-            <div class="row">
-                    <div class="card m-3" style="width: 18rem;">
-                            <img class="card-img-top" src="https://i.ibb.co/Bw8SqPg/Screen-Shot-2019-06-08-at-1-47-03-PM.png" width="100" height="230" alt="L.A. Traffic Citations">
-                            <div class="card-body">
-                              <h5 class="card-title">L.A. Traffic Citation Analysis</h5>
-                              <p class="card-text">Using a dataset from Los Angeles Open Data, an analysis to determine which area has most tickets over the course of the year, which agency issues the most tickets, what are the top violations, which car make gets the most tickets.</p>
-                              <a href="https://gdinolfo.github.io/la.html" target="_blank" class="btn btn-primary">See Project</a>
-                            </div>
-                          </div>
-
-                          <div class="card m-3" style="width: 18rem;">
-                                <img class="card-img-top" src="https://i.ibb.co/Mg9nD5q/dashboard.png" width="100" height="230" alt="2018 US Flights Dashboard">
-                                <div class="card-body">
-                                  <h5 class="card-title">2018 U.S. Flights Dashboard</h5>
-                                  <p class="card-text">Exploratory dashboard on 2018 US Domestic flight data. Implemented using a back end API framework with Flask and front-end with HTML, CSS, and Javascript.</p>
-                                  <a href="http://axc33.pythonanywhere.com/" target="_blank" class="btn btn-primary">See Project</a>
-                                </div>
-                              </div>
-                              <div class="card m-3" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://i.ibb.co/0Vc7VBk/audio1.png" width="100" height="230" alt="Audio Classifier">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Audio Classififer App</h5>
-                                      <p class="card-text">Web implementation of our machine learning model that allows the prediction of audio samples.</p>
-                                      <a href="#" target="_blank" class="btn btn-primary">See Project</a>
-                                    </div>
-                                  </div>
+    <!-- Title Row -->
+    <main role="main" class="col-md-12 ml-sm-auto col-lg-12 pt-3 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+            <h1 class="h1">2018 US Flights Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group mr-2">
+                    <button class="btn btn-sm btn-outline-secondary">Share</button>
+                    <button class="btn btn-sm btn-outline-secondary">Export</button>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                    <span data-feather="calendar"></span>
+                    This week
+                </button>
             </div>
-          </div>
-
-
-<hr>
-
-<!-- Footer -->
-        <footer class="page-footer">
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-          <a href="https://mdbootstrap.com/education/bootstrap/"> AI Team</a>
         </div>
-        <!-- Copyright -->
-      
-      </footer>
-      <!-- Footer -->
 
-      
-          
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+        <!-- Top Section -->
+        <!-- <div class="container"> -->
+        <div class="row">
+            <div class="card text-dark bg-light mb-3" style="width: 25rem;">
+                <h5 class="card-header">
+                    <i class="material-icons">flight</i>
+                    Flights Overview
+                </h5>
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+            <div class="card text-white bg-primary mb-3" style="width: 25rem;">
+                <h5 class="card-header">
+                    <i class="material-icons">access_time</i>
+                    On-Time Flights
+                </h5>
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+            <div class="card text-white bg-warning mb-3" style="width: 25rem;">
+                <h5 class="card-header">
+                    <i class="material-icons">warning</i>
+                    Delayed Flights
+                </h5>
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!-- Bottom Section -->
+        <div class="row">
+            <div class="card text-dark bg-light mb-3" style="width: 45rem; height: 30rem">
+                <h5 class="card-header">
+                    <i class="material-icons">public</i>
+                    Delayed Flights Map
+                </h5>
+                <div class="card-body">
+                    <div id='map'></div>
+                </div>
+            </div>
+
+            <div class="card text-dark bg-light mb-3" style="width: 30rem;">
+                <h5 class="card-header">
+                    <i class="material-icons">search</i>
+                    Delayed Flight Search
+                </h5>
+                <div class="card-body">
+                    <p class="card-text">Enter your future flight info to get past delay statistics:</p>
+                    <form>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="exampleSelect1">Airline</label>
+                                <select class="form-control" id="exampleSelect1">
+                                    <option>Alaska Airlines</option>
+                                    <option>Allegiant Air</option>
+                                    <option>American Airlines</option>
+                                    <option>American Eagle Airlines</option>
+                                    <option>Atlantic Southeast Airlines</option>
+                                    <option>Delta Air Lines</option>
+                                    <option>Endeavor Air</option>
+                                    <option>Frontier Airlines</option>
+                                    <option>Hawaiian Airlines</option>
+                                    <option>JetBlue Airways</option>
+                                    <option>Mesa Airlines</option>
+                                    <option>Midwest Airlines</option>
+                                    <option>PSA Airlines</option>
+                                    <option>Skywest Airlines</option>
+                                    <option>Southwest Airlines</option>
+                                    <option>Spirit Airlines</option>
+                                    <option>United Airlines</option>
+                                    <option>Virgin America</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="exampleSelect1">Departure Airport</label>
+                                        <select class="custom-select">
+                                            <option selected="">Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleSelect1">Destination Airport</label>
+                                        <select class="custom-select">
+                                            <option selected="">Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="exampleSelect1">Departure Date</label>
+                                        <select class="custom-select">
+                                            <option selected="">Open this select menu</option>
+                                            <option value="1">One</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleSelect1">Departure Time</label>
+                                        <select class="custom-select">
+                                            <option selected="">Open this select menu</option>
+                                            <option value="1">One</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- API key -->
+        <script type="text/javascript" src="config.js"></script>
+        <!-- JS -->
+        <script type="text/javascript" src="logic.js"></script>
+
+</body>
+
 </html>
-
